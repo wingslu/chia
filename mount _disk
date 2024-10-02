@@ -1,0 +1,183 @@
+vim /etc/fstab
+
+systemctl daemon-reload
+
+mount -a
+
+
+mkfs.btrfs -m single -d single -f /dev/sda
+
+mkfs.btrfs -L 1 -m single -d single -f /dev/sda
+
+mkfs.btrfs -U xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -L 1 -m single -d single -f /dev/sda
+
+
+缓存盘PM1733挂盘
+
+UUID=249a7b20-e609-4e5b-b11c-796970dc2b49 /chia_plots_temp ext4 defaults 0 0
+
+nossd池p盘，c13
+
+UUID=08210d4c-dd88-4efa-ab59-d9577d40f377 /chia_plots_disk/1 btrfs defaults 0 0
+UUID=2c95702a-fc04-485a-b552-6eb830fed907 /chia_plots_disk/2 btrfs defaults 0 0
+UUID=5f70b538-bbe2-4e24-8deb-4d11e2a872d3 /chia_plots_disk/3 btrfs defaults 0 0
+UUID=04cffed9-2954-4825-86ab-ef26ec316a15 /chia_plots_disk/4 btrfs defaults 0 0
+UUID=4ff3256b-812a-4f7c-97d4-026256a92b03 /chia_plots_disk/5 btrfs defaults 0 0
+UUID=0b1055b7-3f9a-4ec2-a1a9-9e65c1c26b48 /chia_plots_disk/6 btrfs defaults 0 0
+UUID=d2946b24-38f3-4248-97c4-cb1c5627e535 /chia_plots_disk/7 btrfs defaults 0 0
+UUID=912cfae2-b3e2-4c28-8a54-e4d6fa46429c /chia_plots_disk/8 btrfs defaults 0 0
+UUID=3f8ad284-3ac1-4c95-95fb-5ba3301e0ce5 /chia_plots_disk/9 btrfs defaults 0 0
+UUID=1bacee93-cd20-41e5-82ad-23462dde7181 /chia_plots_disk/10 btrfs defaults 0 0
+UUID=78906c32-fcaf-4691-8862-443f5a3621a3 /chia_plots_disk/11 btrfs defaults 0 0
+UUID=66a6978f-9fb3-44d2-9af4-ecf95d50bc2f /chia_plots_disk/12 btrfs defaults 0 0
+
+UUID=b7bd5739-88fb-44ff-8205-a1be7dac6109 /chia_plots_disk/1 btrfs defaults 0 0
+UUID=534ca77b-1e76-4723-8464-e88364f50e79 /chia_plots_disk/2 btrfs defaults 0 0
+UUID=a18c58c7-4899-48ce-a1f0-6acb245f5f82 /chia_plots_disk/3 btrfs defaults 0 0
+UUID=85d19030-85ce-4664-a434-4252d08c077a /chia_plots_disk/4 btrfs defaults 0 0
+UUID=56f06917-ef24-4a7e-ad40-29ecbf22d683 /chia_plots_disk/5 btrfs defaults 0 0
+UUID=969a3c09-5e99-4694-ae91-257eed6196ee /chia_plots_disk/6 btrfs defaults 0 0
+UUID=43ee1531-4ef7-4dce-8b7f-503c6633da72 /chia_plots_disk/7 btrfs defaults 0 0
+UUID=1f943d92-4b9b-4634-a6e8-af85ba7da257 /chia_plots_disk/8 btrfs defaults 0 0
+UUID=95124b38-508b-467c-8906-343f4e7d870c /chia_plots_disk/9 btrfs defaults 0 0
+UUID=38639bd2-3217-4799-8065-189c5f6b4bb1 /chia_plots_disk/10 btrfs defaults 0 0
+UUID=0da433fe-1dcf-40ab-98bf-fa2262d2aa20 /chia_plots_disk/11 btrfs defaults 0 0
+UUID=5f2118c0-a2fb-4fd9-b22f-c178933a41f2 /chia_plots_disk/12 btrfs defaults 0 0
+
+UUID=1943deaa-0ad0-4915-a05b-6de69792c8e0 /chia_plots_disk/1 btrfs defaults 0 0
+UUID=a4e3fd71-6abe-4e22-b530-863fb23887af /chia_plots_disk/2 btrfs defaults 0 0
+UUID=f35e1143-5227-4ece-963d-f2e05822ea05 /chia_plots_disk/3 btrfs defaults 0 0
+UUID=9e755e9b-f2f3-4ac1-b177-b241405d692f /chia_plots_disk/4 btrfs defaults 0 0
+UUID=84cc90b9-861c-478f-bead-fd58dd9776c3 /chia_plots_disk/5 btrfs defaults 0 0
+UUID=8a302e7f-fa43-4c50-89a2-1a6b9b503897 /chia_plots_disk/6 btrfs defaults 0 0
+UUID=f279e69f-e602-4acf-9ce1-1b6e79a7c632 /chia_plots_disk/7 btrfs defaults 0 0
+UUID=6017bd6b-f4c8-46b9-a644-195fd41050c6 /chia_plots_disk/8 btrfs defaults 0 0
+UUID=176342f4-51a6-4829-8296-c206ed97c41f /chia_plots_disk/9 btrfs defaults 0 0
+UUID=e3425c50-0934-45c2-b6d8-d71b24b95805 /chia_plots_disk/10 btrfs defaults 0 0
+UUID=48adaad3-fcb9-4521-ab9d-a5ee95380cc5 /chia_plots_disk/11 btrfs defaults 0 0
+UUID=25eead00-e014-4890-9466-28f7035ae208 /chia_plots_disk/12 btrfs defaults 0 0
+
+nossd池挂盘，c13
+
+UUID=08210d4c-dd88-4efa-ab59-d9577d40f377 /nossd-c13/1 btrfs defaults 0 0
+UUID=2c95702a-fc04-485a-b552-6eb830fed907 /nossd-c13/2 btrfs defaults 0 0
+UUID=5f70b538-bbe2-4e24-8deb-4d11e2a872d3 /nossd-c13/3 btrfs defaults 0 0
+UUID=04cffed9-2954-4825-86ab-ef26ec316a15 /nossd-c13/4 btrfs defaults 0 0
+UUID=4ff3256b-812a-4f7c-97d4-026256a92b03 /nossd-c13/5 btrfs defaults 0 0
+UUID=0b1055b7-3f9a-4ec2-a1a9-9e65c1c26b48 /nossd-c13/6 btrfs defaults 0 0
+UUID=d2946b24-38f3-4248-97c4-cb1c5627e535 /nossd-c13/7 btrfs defaults 0 0
+UUID=912cfae2-b3e2-4c28-8a54-e4d6fa46429c /nossd-c13/8 btrfs defaults 0 0
+UUID=3f8ad284-3ac1-4c95-95fb-5ba3301e0ce5 /nossd-c13/9 btrfs defaults 0 0
+UUID=1bacee93-cd20-41e5-82ad-23462dde7181 /nossd-c13/10 btrfs defaults 0 0
+UUID=78906c32-fcaf-4691-8862-443f5a3621a3 /nossd-c13/11 btrfs defaults 0 0
+UUID=66a6978f-9fb3-44d2-9af4-ecf95d50bc2f /nossd-c13/12 btrfs defaults 0 0
+
+UUID=b7bd5739-88fb-44ff-8205-a1be7dac6109 /nossd-c13/13 btrfs defaults 0 0
+UUID=534ca77b-1e76-4723-8464-e88364f50e79 /nossd-c13/14 btrfs defaults 0 0
+UUID=a18c58c7-4899-48ce-a1f0-6acb245f5f82 /nossd-c13/15 btrfs defaults 0 0
+UUID=85d19030-85ce-4664-a434-4252d08c077a /nossd-c13/16 btrfs defaults 0 0
+UUID=56f06917-ef24-4a7e-ad40-29ecbf22d683 /nossd-c13/17 btrfs defaults 0 0
+UUID=969a3c09-5e99-4694-ae91-257eed6196ee /nossd-c13/18 btrfs defaults 0 0
+UUID=43ee1531-4ef7-4dce-8b7f-503c6633da72 /nossd-c13/19 btrfs defaults 0 0
+UUID=1f943d92-4b9b-4634-a6e8-af85ba7da257 /nossd-c13/20 btrfs defaults 0 0
+UUID=95124b38-508b-467c-8906-343f4e7d870c /nossd-c13/21 btrfs defaults 0 0
+UUID=38639bd2-3217-4799-8065-189c5f6b4bb1 /nossd-c13/22 btrfs defaults 0 0
+UUID=0da433fe-1dcf-40ab-98bf-fa2262d2aa20 /nossd-c13/23 btrfs defaults 0 0
+UUID=5f2118c0-a2fb-4fd9-b22f-c178933a41f2 /nossd-c13/24 btrfs defaults 0 0
+
+UUID=1943deaa-0ad0-4915-a05b-6de69792c8e0 /nossd-c13/25 btrfs defaults 0 0
+UUID=a4e3fd71-6abe-4e22-b530-863fb23887af /nossd-c13/26 btrfs defaults 0 0
+UUID=f35e1143-5227-4ece-963d-f2e05822ea05 /nossd-c13/27 btrfs defaults 0 0
+UUID=9e755e9b-f2f3-4ac1-b177-b241405d692f /nossd-c13/28 btrfs defaults 0 0
+UUID=84cc90b9-861c-478f-bead-fd58dd9776c3 /nossd-c13/29 btrfs defaults 0 0
+UUID=8a302e7f-fa43-4c50-89a2-1a6b9b503897 /nossd-c13/30 btrfs defaults 0 0
+UUID=f279e69f-e602-4acf-9ce1-1b6e79a7c632 /nossd-c13/31 btrfs defaults 0 0
+UUID=6017bd6b-f4c8-46b9-a644-195fd41050c6 /nossd-c13/32 btrfs defaults 0 0
+UUID=176342f4-51a6-4829-8296-c206ed97c41f /nossd-c13/33 btrfs defaults 0 0
+UUID=e3425c50-0934-45c2-b6d8-d71b24b95805 /nossd-c13/34 btrfs defaults 0 0
+UUID=48adaad3-fcb9-4521-ab9d-a5ee95380cc5 /nossd-c13/35 btrfs defaults 0 0
+UUID=25eead00-e014-4890-9466-28f7035ae208 /nossd-c13/36 btrfs defaults 0 0
+
+nossd池p盘，c15
+
+UUID=252dc8b8-0545-4f11-a6d4-377b0262856c /chia_plots_disk/1 btrfs defaults 0 0
+UUID=75b938c6-4e23-4dab-946e-fbdfc8a08021 /chia_plots_disk/2 btrfs defaults 0 0
+UUID=4648c515-b2f8-4c41-af16-72f306c9da43 /chia_plots_disk/3 btrfs defaults 0 0
+UUID=4f23fb26-55ac-492c-bebe-48a83a82ca41 /chia_plots_disk/4 btrfs defaults 0 0
+UUID=ac0e4454-2c5c-42a9-96e9-106a619ab80b /chia_plots_disk/5 btrfs defaults 0 0
+UUID=da87b792-8767-4c88-b3d0-aac28cbd7540 /chia_plots_disk/6 btrfs defaults 0 0
+UUID=ee80985b-7051-428f-83d4-708ce6501930 /chia_plots_disk/7 btrfs defaults 0 0
+UUID=63847f5c-1d59-4a01-9910-2e99ed78684a /chia_plots_disk/8 btrfs defaults 0 0
+UUID=0df0a62d-7e54-4365-87a8-a24a354ab2e9 /chia_plots_disk/9 btrfs defaults 0 0
+UUID=1ff4bdb9-c70d-48c2-90c2-01c16854c262 /chia_plots_disk/10 btrfs defaults 0 0
+UUID=2428e052-2a55-4750-967e-6df6188d4acd /chia_plots_disk/11 btrfs defaults 0 0
+UUID=b3fd56ab-0ce9-48ce-9c01-7914d235f58d /chia_plots_disk/12 btrfs defaults 0 0
+
+UUID=efc97273-2ad8-4360-b059-2c908ef3b058 /chia_plots_disk/1 btrfs defaults 0 0
+UUID=7df2209c-9465-4b85-aef0-0f990fa88995 /chia_plots_disk/2 btrfs defaults 0 0
+UUID=49b8d8cb-6570-4d2f-9be7-d005735eaa3c /chia_plots_disk/3 btrfs defaults 0 0
+UUID=d40ae37d-9195-47ab-80c1-55adf14cd49c /chia_plots_disk/4 btrfs defaults 0 0
+UUID=dbef2aef-4183-495b-b510-6bf6abe6a1ad /chia_plots_disk/5 btrfs defaults 0 0
+UUID=92043a4b-0675-48c5-8d78-7fbc069590b1 /chia_plots_disk/6 btrfs defaults 0 0
+UUID=717c7e9c-f686-47bb-9faa-6ec219aec3ef /chia_plots_disk/7 btrfs defaults 0 0
+UUID=ee4d7618-115f-4ae1-8f1c-a6b9d1f859e4 /chia_plots_disk/8 btrfs defaults 0 0
+UUID=b170a23e-baaf-45af-8838-e40948c625fa /chia_plots_disk/9 btrfs defaults 0 0
+UUID=317d223b-3672-4dfd-a80d-e768f379a382 /chia_plots_disk/10 btrfs defaults 0 0
+UUID=d069180a-a2ac-468d-9369-871d44840feb /chia_plots_disk/11 btrfs defaults 0 0
+UUID=868940d4-989e-41f8-9b3d-3bd70b175ecc /chia_plots_disk/12 btrfs defaults 0 0
+
+UUID=20783893-42fa-4498-a719-11547cdbcc39 /chia_plots_disk/1 btrfs defaults 0 0
+UUID=c43ed465-1b12-48a8-b13c-c08a5e394b3e /chia_plots_disk/2 btrfs defaults 0 0
+UUID=779770bc-23e2-4728-b233-f2a7d8d16737 /chia_plots_disk/3 btrfs defaults 0 0
+UUID=ef88781a-6c4f-43a4-a3f9-1d8178e05155 /chia_plots_disk/4 btrfs defaults 0 0
+UUID=fd8b48ae-f892-416d-9fe1-e0b63a7a4974 /chia_plots_disk/5 btrfs defaults 0 0
+UUID=b65a1add-29c3-4dd6-8891-e079b9aa9961 /chia_plots_disk/6 btrfs defaults 0 0
+UUID=cb7a4aa8-e3c2-4b0a-ac4c-cab3f06f0b36 /chia_plots_disk/7 btrfs defaults 0 0
+UUID=0094c0d0-3fc8-49cb-85bb-809681bfb69b /chia_plots_disk/8 btrfs defaults 0 0
+UUID=f6ac4e2b-df25-472a-bcdc-848e25db6b74 /chia_plots_disk/9 btrfs defaults 0 0
+UUID=1b027ab7-9f70-4c62-ad81-630a2e8ae58c /chia_plots_disk/10 btrfs defaults 0 0
+UUID=b10273d7-32bb-4b76-96ef-0a504f710294 /chia_plots_disk/11 btrfs defaults 0 0
+UUID=8883e8f7-d308-4c76-aae8-22fd3c02d972 /chia_plots_disk/12 btrfs defaults 0 0
+
+nossd池挂盘，c15
+
+UUID=252dc8b8-0545-4f11-a6d4-377b0262856c /nossd-c15/1 btrfs defaults 0 0
+UUID=75b938c6-4e23-4dab-946e-fbdfc8a08021 /nossd-c15/2 btrfs defaults 0 0
+UUID=4648c515-b2f8-4c41-af16-72f306c9da43 /nossd-c15/3 btrfs defaults 0 0
+UUID=4f23fb26-55ac-492c-bebe-48a83a82ca41 /nossd-c15/4 btrfs defaults 0 0
+UUID=ac0e4454-2c5c-42a9-96e9-106a619ab80b /nossd-c15/5 btrfs defaults 0 0
+UUID=da87b792-8767-4c88-b3d0-aac28cbd7540 /nossd-c15/6 btrfs defaults 0 0
+UUID=ee80985b-7051-428f-83d4-708ce6501930 /nossd-c15/7 btrfs defaults 0 0
+UUID=63847f5c-1d59-4a01-9910-2e99ed78684a /nossd-c15/8 btrfs defaults 0 0
+UUID=0df0a62d-7e54-4365-87a8-a24a354ab2e9 /nossd-c15/9 btrfs defaults 0 0
+UUID=1ff4bdb9-c70d-48c2-90c2-01c16854c262 /nossd-c15/10 btrfs defaults 0 0
+UUID=2428e052-2a55-4750-967e-6df6188d4acd /nossd-c15/11 btrfs defaults 0 0
+UUID=b3fd56ab-0ce9-48ce-9c01-7914d235f58d /nossd-c15/12 btrfs defaults 0 0
+
+UUID=efc97273-2ad8-4360-b059-2c908ef3b058 /nossd-c15/13 btrfs defaults 0 0
+UUID=7df2209c-9465-4b85-aef0-0f990fa88995 /nossd-c15/14 btrfs defaults 0 0
+UUID=49b8d8cb-6570-4d2f-9be7-d005735eaa3c /nossd-c15/15 btrfs defaults 0 0
+UUID=d40ae37d-9195-47ab-80c1-55adf14cd49c /nossd-c15/16 btrfs defaults 0 0
+UUID=dbef2aef-4183-495b-b510-6bf6abe6a1ad /nossd-c15/17 btrfs defaults 0 0
+UUID=92043a4b-0675-48c5-8d78-7fbc069590b1 /nossd-c15/18 btrfs defaults 0 0
+UUID=717c7e9c-f686-47bb-9faa-6ec219aec3ef /nossd-c15/19 btrfs defaults 0 0
+UUID=ee4d7618-115f-4ae1-8f1c-a6b9d1f859e4 /nossd-c15/20 btrfs defaults 0 0
+UUID=b170a23e-baaf-45af-8838-e40948c625fa /nossd-c15/21 btrfs defaults 0 0
+UUID=317d223b-3672-4dfd-a80d-e768f379a382 /nossd-c15/22 btrfs defaults 0 0
+UUID=d069180a-a2ac-468d-9369-871d44840feb /nossd-c15/23 btrfs defaults 0 0
+UUID=868940d4-989e-41f8-9b3d-3bd70b175ecc /nossd-c15/24 btrfs defaults 0 0
+
+UUID=20783893-42fa-4498-a719-11547cdbcc39 /nossd-c15/25 btrfs defaults 0 0
+UUID=c43ed465-1b12-48a8-b13c-c08a5e394b3e /nossd-c15/26 btrfs defaults 0 0
+UUID=779770bc-23e2-4728-b233-f2a7d8d16737 /nossd-c15/27 btrfs defaults 0 0
+UUID=ef88781a-6c4f-43a4-a3f9-1d8178e05155 /nossd-c15/28 btrfs defaults 0 0
+UUID=fd8b48ae-f892-416d-9fe1-e0b63a7a4974 /nossd-c15/29 btrfs defaults 0 0
+UUID=b65a1add-29c3-4dd6-8891-e079b9aa9961 /nossd-c15/30 btrfs defaults 0 0
+UUID=cb7a4aa8-e3c2-4b0a-ac4c-cab3f06f0b36 /nossd-c15/31 btrfs defaults 0 0
+UUID=0094c0d0-3fc8-49cb-85bb-809681bfb69b /nossd-c15/32 btrfs defaults 0 0
+UUID=f6ac4e2b-df25-472a-bcdc-848e25db6b74 /nossd-c15/33 btrfs defaults 0 0
+UUID=1b027ab7-9f70-4c62-ad81-630a2e8ae58c /nossd-c15/34 btrfs defaults 0 0
+UUID=b10273d7-32bb-4b76-96ef-0a504f710294 /nossd-c15/35 btrfs defaults 0 0
+UUID=8883e8f7-d308-4c76-aae8-22fd3c02d972 /nossd-c15/36 btrfs defaults 0 0
+
+
