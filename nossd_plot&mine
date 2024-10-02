@@ -21,3 +21,4 @@
 ./client -a xch1ly4kju9fnu02mntwhr40lss0vw6p3yqwd8aaw2dc3034kf53v8eqxjzkd9 -u 0 -w 17460 --no-benchmark --no-gpu-plotting --no-plotting -d,r /nossd-c13/* -d,r /nossd-c15/*
 
 
+	
