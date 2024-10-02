@@ -1,1 +1,2 @@
 # chia
+chia mine tutorial
