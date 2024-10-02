@@ -1,0 +1,21 @@
+./client --no-gpu-plotting --no-plotting
+
+
+
+./client --no-benchmark --no-temp -d /chia_plots_temp -c 15
+
+
+
+./client -s /root/nossd_cpu_plot_temp/ --no-benchmark --no-temp --no-gpu-plotting --p-threads 64 -d /chia_plots_temp -c 15
+
+
+
+./client -a xch1ly4kju9fnu02mntwhr40lss0vw6p3yqwd8aaw2dc3034kf53v8eqxjzkd9 -u 0 -w 17460 --no-benchmark --no-gpu-plotting --no-plotting -d,r /nossd-c13/1 -d,r /nossd-c13/2 -d,r /nossd-c13/3 -d,r /nossd-c13/4 -d,r /nossd-c13/5 -d,r /nossd-c13/6 -d,r /nossd-c13/7 -d,r /nossd-c13/8 -d,r /nossd-c13/9 -d,r /nossd-c13/10 -d,r /nossd-c13/11 -d,r /nossd-c13/12 -d,r /nossd-c13/13 -d,r /nossd-c13/14 -d,r /nossd-c13/15 -d,r /nossd-c13/16 -d,r /nossd-c13/17 -d,r /nossd-c13/18 -d,r /nossd-c13/19 -d,r /nossd-c13/20 -d,r /nossd-c13/21 -d,r /nossd-c13/22 -d,r /nossd-c13/23 -d,r /nossd-c13/24 -d,r /nossd-c13/25 -d,r /nossd-c13/26 -d,r /nossd-c13/27 -d,r /nossd-c13/28 -d,r /nossd-c13/29 -d,r /nossd-c13/30 -d,r /nossd-c13/31 -d,r /nossd-c13/32 -d,r /nossd-c13/33 -d,r /nossd-c13/34 -d,r /nossd-c13/35 -d,r /nossd-c13/36 -d,r /nossd-c15/1 -d,r /nossd-c15/2 -d,r /nossd-c15/3 -d,r /nossd-c15/4 -d,r /nossd-c15/5 -d,r /nossd-c15/6 -d,r /nossd-c15/7 -d,r /nossd-c15/8 -d,r /nossd-c15/9 -d,r /nossd-c15/10 -d,r /nossd-c15/11 -d,r /nossd-c15/12 -d,r /nossd-c15/13 -d,r /nossd-c15/14 -d,r /nossd-c15/15 -d,r /nossd-c15/16 -d,r /nossd-c15/17 -d,r /nossd-c15/18 -d,r /nossd-c15/19 -d,r /nossd-c15/20 -d,r /nossd-c15/21 -d,r /nossd-c15/22 -d,r /nossd-c15/23 -d,r /nossd-c15/24 -d,r /nossd-c15/25 -d,r /nossd-c15/26 -d,r /nossd-c15/27 -d,r /nossd-c15/28 -d,r /nossd-c15/29 -d,r /nossd-c15/30 -d,r /nossd-c15/31 -d,r /nossd-c15/32 -d,r /nossd-c15/33 -d,r /nossd-c15/34 -d,r /nossd-c15/35 -d,r /nossd-c15/36
+
+
+
+./client -a xch1ly4kju9fnu02mntwhr40lss0vw6p3yqwd8aaw2dc3034kf53v8eqxjzkd9 -u 0 -w 14880 --no-benchmark --no-gpu-plotting --no-plotting -d,r /nossd-c13/1 -d,r /nossd-c13/2 -d,r /nossd-c13/3 -d,r /nossd-c13/4 -d,r /nossd-c13/5 -d,r /nossd-c13/6 -d,r /nossd-c13/7 -d,r /nossd-c13/8 -d,r /nossd-c13/9 -d,r /nossd-c13/10 -d,r /nossd-c13/11 -d,r /nossd-c13/12 -d,r /nossd-c13/13 -d,r /nossd-c13/14 -d,r /nossd-c13/15 -d,r /nossd-c13/16 -d,r /nossd-c13/17 -d,r /nossd-c13/18 -d,r /nossd-c13/19 -d,r /nossd-c13/20 -d,r /nossd-c13/21 -d,r /nossd-c13/22 -d,r /nossd-c13/23 -d,r /nossd-c13/24 -d,r /nossd-c13/25 -d,r /nossd-c13/26 -d,r /nossd-c13/27 -d,r /nossd-c13/28 -d,r /nossd-c13/29 -d,r /nossd-c13/30 -d,r /nossd-c13/31 -d,r /nossd-c13/32 -d,r /nossd-c13/33 -d,r /nossd-c13/34 -d,r /nossd-c13/35 -d,r /nossd-c13/36 -d,r /nossd-c15/1 -d,r /nossd-c15/2 -d,r /nossd-c15/3 -d,r /nossd-c15/4 -d,r /nossd-c15/5 -d,r /nossd-c15/6 -d,r /nossd-c15/7 -d,r /nossd-c15/8 -d,r /nossd-c15/9 -d,r /nossd-c15/10 -d,r /nossd-c15/11 -d,r /nossd-c15/12 -d,r /nossd-c15/13 -d,r /nossd-c15/14 -d,r /nossd-c15/15 -d,r /nossd-c15/16 -d,r /nossd-c15/17 -d,r /nossd-c15/18 -d,r /nossd-c15/19 -d,r /nossd-c15/20 -d,r /nossd-c15/21 -d,r /nossd-c15/22 -d,r /nossd-c15/23 -d,r /nossd-c15/24 -d,r /nossd-c15/25 -d,r /nossd-c15/26
+
+
+
+./client -a xch1ly4kju9fnu02mntwhr40lss0vw6p3yqwd8aaw2dc3034kf53v8eqxjzkd9 -u 0 -w 17460 --no-benchmark --no-gpu-plotting --no-plotting -d,r /nossd-c13/* -d,r /nossd-c15/*
