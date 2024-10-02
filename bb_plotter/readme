@@ -1,1 +1,1 @@
-replace bladebit_cuda in bb_plotter_v1.0/bin
+unzip bladebit-cuda-v3.0.0-alpha4-ubuntu-x86-64.tar.gz.zip.zip put bladebit_cuda in bb_plotter_v1.0/bin
